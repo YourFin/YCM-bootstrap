@@ -66,7 +66,7 @@ if [ "$(uname)" = "Darwin" ] && ! ycmd_command_exists gcc ; then
     USED_CXX='$GCC_BIN_LOCATION/c++-6.3.0'
 fi
 
-MAKE_SUFFIX='CC="$USED_CC" AR="$USED_AR" RANLIB="$USED_RANLIB" NM="$USED_NM" CXX="$USED_CXX"'
+MAKE_SUFFIX='cc="$USED_CC" ar="$USED_AR" ranlib="$USED_RANLIB" nm="$USED_NM" cxx="$USED_CXX"'
 
 # bootstrap make if it doesn't exist
 if ! ycmd_command_exists make ; then
